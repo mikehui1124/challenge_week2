@@ -1,0 +1,206 @@
+/*universal selector*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.0;
+    background-color: #ffffff;
+  }
+
+
+header {
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #796334;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*display top heading as inline-block and set font size, element selector */
+.header h1 {
+    /*display: inline-block;*/
+    font-size: 40px;
+}
+
+.header h1 .mike {
+    color: Orange;
+    font-weight: 900;
+}
+
+/*display nav bar as float-right, set padding size and inline with top heading  */
+.header nav {
+    padding-top: 15px;
+    margin-left: 25px;
+    list-style-type: none;
+    float: right;    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+
+.header nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 500px;
+  }
+
+
+  nav a {
+    color: yellow;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+/*set font color to all anchor element */
+a {
+    color:blue;
+    text-decoration: none;
+}
+
+/*set font size to all p element */
+p {
+    font-size: 16px;
+}
+
+.watermark {    
+    height: 300px;
+    width: 100%;
+    margin-bottom: 15px;
+    background-image: url("../images/01.png");
+    alt: "Graphic about digital marketing";
+    background-size: cover;
+    background-position: center;
+}
+
+.watermark .slogan {
+    position: absolute;
+    top: 350px;
+    right: 25px;
+    color: white;   
+}
+
+  .intro, .projects, .contact, .resume {
+    display: flex;
+    /* Align the child elements to the top of the parent */
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    margin: 1% auto;
+  }
+  
+  .chapter {
+    padding-top: 15px;
+    padding-right: 10px;
+    flex: 1 1 20%;
+    text-align: right;
+  }
+
+  .intro-detail {
+    /*display: flex;*/
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 15px;
+    flex: 1 1 60%;
+    text-align: left;
+  }
+
+  .intro-photo {        
+    flex: 1 1 20%;    
+    padding-right:15px;
+    border-radius: 10px;
+  }
+
+  .intro-photo img {      
+    flex: 1 1 20%;      
+    padding-right:0;
+    border-radius: 10px;
+  }
+
+  .project-show {        
+    flex: 1 1 80%;
+    background-color: rgb(219, 216, 198);
+    padding:20px;    
+    margin-right: 15px;
+    border-radius: 25px;
+  }
+  .project-show li{
+    margin-bottom: 5px;
+  }   
+
+    .first-proj {
+    margin-bottom: 20px;
+  }
+ 
+ .project-box {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+ }
+
+ .project2 {
+    flex: 1 1 0%;
+    margin-bottom: 20px;    
+ } 
+
+ .first-project {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+  }
+
+  .project2 .project {
+    /*width:95%;*/
+    width: 500px;
+    height: 250px;
+    margin: 10px;
+    border-radius: 25px;
+    
+  }
+  
+  .my-image {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+  
+@media screen and (max-width: 768px) {
+    header, 
+    .intro, .projects, .contact, .resume, 
+    main {
+      flex-direction: column;
+    }
+  .intro, .contact, .resume {
+    align-items: center;
+  }
+
+  }
+
+
+
+
+
+
+/* clear the footer from any adjacent float-type element*/
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 20px;
+}
